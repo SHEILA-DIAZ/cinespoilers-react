@@ -1,14 +1,20 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import PageContainer from "@/components/layout/page-container";
 import MoviesList from "@/components/movies/movies-list";
 import MoviesPageHeader from "@/components/movies/movies-page-header";
 import MoviesSearch from "@/components/movies/movies-search";
-import { movies } from "@/data/movies";
+import { useMovieStore } from "@/stores/movie.store";
 
 const MoviesPage = () => {
+  const { movies, loadMovies } = useMovieStore();
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("all");
+
+  useEffect(() => {
+    loadMovies();
+  }, [loadMovies]);
 
   const availableMovies = movies;
 
@@ -25,6 +31,7 @@ const MoviesPage = () => {
       const matchesTitle = movie.title
         .toLowerCase()
         .includes(normalizedSearchTerm);
+
       const matchesGenre =
         selectedGenre === "all" || movie.genre === selectedGenre;
 
