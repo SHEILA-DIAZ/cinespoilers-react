@@ -18,7 +18,7 @@ Aplicación web desarrollada con **React + TypeScript + Vite** para explorar pel
 
 ---
 
-# 📸 Evidencias de Desarrollo
+# 📸 Evidencias de Sheila Diaz
 
 ## Evidencia 01: Clonación del Repositorio
 
@@ -89,7 +89,120 @@ Se ejecutaron correctamente las pruebas utilizando Vitest.
 ![Evidencia 08](./Evidencias/08-EjecucionTests.png)
 
 ---
+# Evidencias de Naomi Sanchez
 
-# 👩‍💻 Autora
+## Evidencia 01 - Clonar repositorio
 
-**Sheila Diaz Rojas**
+Descripción:
+
+Se clonó correctamente el repositorio proporcionado por el docente y posteriormente se configuró el repositorio remoto para trabajar sobre el repositorio del equipo.
+
+### Capturas
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+---
+
+## Evidencia 02 - Levantar proyecto
+
+Descripción:
+
+Se instalaron todas las dependencias mediante npm y se ejecutó correctamente el proyecto utilizando Vite.
+
+### Capturas
+
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+---
+
+## Evidencia 03 - Consumo de la API TMDB
+
+Descripción:
+
+Se reemplazó la información estática por datos obtenidos desde la API de TMDB utilizando Axios y variables de entorno.
+
+### Capturas
+
+![alt text](image-5.png)
+![alt text](image-4.png)
+
+- Configuración del servicio HTTP
+- Movies Service
+- Página mostrando películas obtenidas desde TMDB
+
+---
+
+## Evidencia 04 - Estado global con Zustand
+
+Descripción:
+
+Se implementó Zustand para centralizar el estado global de las películas, búsqueda, filtros por género y estado de carga.
+
+### Capturas
+
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+- movies-store.ts
+- Aplicación funcionando
+
+---
+
+## Evidencia 05 - Desarrollo de Pages
+
+Descripción:
+
+Se desarrollaron las páginas necesarias para el funcionamiento de la aplicación.
+
+### Pages implementadas
+
+- Home
+- Movies
+- Movie Detail
+
+### Capturas
+
+![alt text](image-8.png)
+![alt text](image-9.png)
+---
+
+## Evidencia 06 - Pasarela de Pago (Simulación)
+
+Descripción:
+
+Se implementó una simulación de compra de entradas mediante un formulario de pago que confirma la compra de forma visual.
+
+### Capturas
+
+![alt text](image-10.png)
+![alt text](image-11.png)
+![alt text](image-13.png)
+
+- Formulario
+- Confirmación del pago
+
+---
+
+## Evidencia 07 - Tests
+
+Descripción:
+
+Se configuró Vitest y Testing Library para validar el funcionamiento de la simulación de pago.
+
+### Capturas
+
+![alt text](image-12.png)
+
+- checkout-page.test.tsx
+- Resultado exitoso de los tests
+
+---
+
+# Ejecución del proyecto
+
+## Instalar dependencias
+
+```bash
+npm install
